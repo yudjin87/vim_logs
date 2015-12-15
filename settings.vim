@@ -19,6 +19,16 @@ let $VIM_DIR = '~/devel/vim_logs/'
 source $VIM_DIR/colors/eb.vim
 source $VIM_DIR/syntax/eb_syntax.vim
 source $VIM_DIR/scripts/color.vim
+source $VIM_DIR/scripts/watchForChanges.vim
 
+"
+source $VIM_DIR/scripts/SearchComplete.vim
+source $VIM_DIR/scripts/mark.vim
 
+let autoreadargs={'autoread':1}
+execute WatchForChanges("*",autoreadargs)
 
+source $VIM_DIR/scripts/search.vim
+
+" Closing tab without confirmation
+nmap <F4> :q!<CR><CR>
