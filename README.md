@@ -1,5 +1,5 @@
 # vim_logs
-Mark <regexp> - to hightlight
+Mark \<regexp\> - to hightlight
 
 Mark - to clear hightlighting
 
